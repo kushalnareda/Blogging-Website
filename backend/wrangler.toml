@@ -1,7 +1,23 @@
-name = "backend"
+name = "blog"
 compatibility_date = "2023-12-01"
-main = "index.ts" 
 
-DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiN2M2MzkwZmQtZjM4My00MzI5LTk1ZmEtZWVmYjdjNzVlNTE1IiwidGVuYW50X2lkIjoiZWQ0Yjg2MDNhNTBmMDhmN2MzYjkxYzVhYjg0ZTE0YmEyNWU1MjhkYTE0NjM2YTBhNDZkMWM3ZDYzMGE3NDk0NyIsImludGVybmFsX3NlY3JldCI6ImMwZTNmYmY1LTMyMmEtNGJlZi1iYWQwLTZiYjI2MTliNDZkMCJ9.NKvZJFq-F_hYHXwb5GgQgTdSYgXnIIOkwqMz-vTXSKs"
+[vars]
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZGRkM2Q4MDAtMTQ3Yy00Y2I2LWE2NmYtZTdkMTk2NTBlNmE5IiwidGVuYW50X2lkIjoiZjg1MTg5OGIwN2QwOWI2MDVjZGZjNTU3ZDI3MTc0MGJkZWZjYjU0OTliMjRmMWRmNTRjZWU2NGViODViZDFlNCIsImludGVybmFsX3NlY3JldCI6IjE5NzZmNTAzLTEwMmMtNDA1YS1hZTI3LTc0OGVhZDcwMjFhYiJ9.POc532oL9uiOdcWBXQcpEdVHlXpYvqtyWVvykMimSEA"
 
-JWT_SECRET = "gsgfgwfhkw"
+JWT_SECRET = "kushal123"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
