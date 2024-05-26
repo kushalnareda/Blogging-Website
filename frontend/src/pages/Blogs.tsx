@@ -7,22 +7,18 @@ export const Blogs = () => {
   if (loading) {
     return <div>loading...</div>;
   }
-  return (
-    <div>
-      <Appbar />
-      <div className="flex justify-center">
-        <div className=" max-w-xl">
-          {blogs.map((blog) => (
-            <BlogCard
-              id={1}
-              authorName= {blog.author.name || "User"}
-              title={blog.title}
-              content={blog.content}
-              publishedDate="2024-05-25"
-            />
-          ))}
+  return <div>
+        <Appbar />
+        <div  className="flex justify-center">
+            <div>
+                {blogs.map(blog => <BlogCard
+                    id={blog.id}
+                    authorName={blog.author.name || "Anonymous"}
+                    title={blog.title}
+                    content={blog.content}
+                    publishedDate={"2nd Feb 2024"}
+                />)}
+            </div>
         </div>
-      </div>
     </div>
-  );
 };
