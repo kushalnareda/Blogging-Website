@@ -14,12 +14,14 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
 
   async function sendRequest() {
     try {
+      const { name = "", username, password } = postInputs;
       const response = await axios.post(
         `${BACKEND_URL}/api/v1/user/${type === "signup" ? "signup" : "signin"}`,
-        postInputs
+        { name, username, password }
       );
       const jwt = response.data;
       localStorage.setItem("token", jwt);
+      localStorage.setItem("name", name);
       navigate("/blogs");
     } catch (e) {
       console.error("Error during request:", e);
